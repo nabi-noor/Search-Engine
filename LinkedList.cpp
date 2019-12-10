@@ -59,3 +59,15 @@ void LinkedList::deleteFromEnd()
     }
     temp->setNext(NULL);
 }
+
+
+Movie LinkedList::searchMovie(int rating)
+{
+    Node* temp = head;
+    while(temp!=NULL)
+    {
+        if(temp->getData().getRating() == rating)
+            return temp->getData();
+        temp = temp->getNext();
+    }
+}
