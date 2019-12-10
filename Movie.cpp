@@ -64,3 +64,12 @@ bool Movie::operator==(Movie x)
         return true;
     return false;
 }
+
+// ****************************************************************************************************
+// << operator overloaded to print the object on screen
+ostream& operator<<(std::ostream& os, const Movie& movie)
+{
+    os << "Movie ID: "<< movie.movieId << " Movie rating: "<< movie.rating << " Movie Votes: "<< movie.votes << endl;
+    return os;
+}
+

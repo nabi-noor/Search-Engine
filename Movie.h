@@ -1,6 +1,7 @@
 #ifndef MOVIE_H
 #define MOVIE_H
 #include <string>
+#include <iostream>
 
 // class declaration
 using namespace std;
@@ -22,6 +23,7 @@ public:
     int getVotes();
 
     bool operator == (Movie x);  // == operator overloading declaration
+    friend ostream& operator<<(std::ostream& os, const Movie& movie);
 };
 
 #endif // MOVIE_H
