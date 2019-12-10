@@ -1,11 +1,9 @@
 #include "LinkedList.h"
+#include "Movie.h"
+#include "Node.h"
 
 LinkedList::LinkedList()
 {
-    //ctor
+    head = NULL;
 }
 
-LinkedList::~LinkedList()
-{
-    //dtor
-}
