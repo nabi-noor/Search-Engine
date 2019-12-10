@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1575302444 source:c:\users\noor\desktop\test\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Movie.h"
+	<bits/stdc++.h>
+
+1575296630 c:\users\noor\desktop\test\movie.h
+	<string>
+
+1575296733 source:c:\users\noor\desktop\test\movie.cpp
+	"Movie.h"
+	<string>
+
+1575302574 source:c:\users\noor\desktop\test\hash.cpp
+	"Hash.h"
+	"Movie.h"
+
+1575304356 c:\users\noor\desktop\test\hash.h
+	"Movie.h"
+
