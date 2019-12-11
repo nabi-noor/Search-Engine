@@ -2,6 +2,7 @@
 #define MOVIE_H
 #include <string>
 #include <iostream>
+#include <fstream>
 
 // class declaration
 using namespace std;
@@ -9,10 +10,11 @@ class Movie
 {
 private:
     string movieId;   // data members
-    int rating, votes;
+    int votes;
+    float rating;
 public:
     Movie(); // constructor declaration
-    Movie(string movieId, int rating, int votes);
+    Movie(string movieId, float rating, int votes);
 
     void setMovieId(string movieId); // setters declaration
     void setRating(int rating);

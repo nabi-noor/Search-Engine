@@ -11,6 +11,7 @@ private:
         void add(Movie key);
         int hash(int key);
         int search(int key);
+        void print();
 };
 
 #endif // HASH_H

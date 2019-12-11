@@ -34,8 +34,12 @@
 		</Compiler>
 		<Unit filename="Hash.cpp" />
 		<Unit filename="Hash.h" />
+		<Unit filename="LinkedList.cpp" />
+		<Unit filename="LinkedList.h" />
 		<Unit filename="Movie.cpp" />
 		<Unit filename="Movie.h" />
+		<Unit filename="Node.cpp" />
+		<Unit filename="Node.h" />
 		<Unit filename="data.txt" />
 		<Unit filename="main.cpp" />
 		<Extensions>

@@ -12,6 +12,7 @@ public:
     void addToEnd(Movie data);
     void deleteFromStart();
     void deleteFromEnd();
+    Node* getHead();
     Movie searchMovie(int rating);
 private:
     Node *head;

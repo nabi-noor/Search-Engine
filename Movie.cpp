@@ -1,5 +1,6 @@
 #include "Movie.h"
 #include <string>
+#include <fstream>
 using namespace std;
 //**************************************************************************
 // default constructor
@@ -13,7 +14,7 @@ Movie::Movie()
 //*****************************************************************************
 // Parametrized Constructor
 
-Movie:: Movie(string movieId, int rating, int votes)
+Movie:: Movie(string movieId, float rating, int votes)
 {
     this->movieId = movieId;
     this->rating = rating;
@@ -69,7 +70,7 @@ bool Movie::operator==(Movie x)
 // << operator overloaded to print the object on screen
 ostream& operator<<(std::ostream& os, const Movie& movie)
 {
-    os << "Movie ID: "<< movie.movieId << " Movie rating: "<< movie.rating << " Movie Votes: "<< movie.votes << endl;
+    os << "Movie ID: "<< movie.movieId; //<< " Movie rating: "<< movie.rating << " Movie Votes: "<< movie.votes;
     return os;
 }
 

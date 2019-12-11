@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include "Movie.h"
+#include "Hash.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,14 +13,16 @@ int main()
     int votesToInt;
     float ratingToFloat;
     read.open("data.txt");
-
+    Hash table;
     while(!read.eof())
     {
         read >> id >> rating >> votes;
         stringstream(rating)>>ratingToFloat;
         stringstream(votes)>>votesToInt;
-        cout << id << '\t' << ratingToFloat << '\t' << votesToInt << endl;
+        Movie obj(id,(ratingToFloat*10),votesToInt);
+        table.add(obj);
     }
     read.close();
+    table.print();
     return 0;
 }
