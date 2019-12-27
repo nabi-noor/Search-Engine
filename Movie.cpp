@@ -47,7 +47,7 @@ string Movie::getMovieId()
     return movieId;
 }
 
-int Movie::getRating()
+float Movie::getRating()
 {
     return rating;
 }
@@ -70,7 +70,7 @@ bool Movie::operator==(Movie x)
 // << operator overloaded to print the object on screen
 ostream& operator<<(std::ostream& os, const Movie& movie)
 {
-    os << "Movie ID: "<< movie.movieId; //<< " Movie rating: "<< movie.rating << " Movie Votes: "<< movie.votes;
+    os << "Movie ID: "<< movie.movieId <<endl << "Movie rating: "<< movie.rating <<endl << "Movie Votes: "<< movie.votes <<endl;
     return os;
 }
 

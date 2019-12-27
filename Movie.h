@@ -21,7 +21,7 @@ public:
     void setVotes(int votes);
 
     string getMovieId(); // getters declaration
-    int getRating();
+    float getRating();
     int getVotes();
 
     bool operator == (Movie x);  // == operator overloading declaration

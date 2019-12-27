@@ -14,6 +14,7 @@ public:
     void deleteFromEnd();
     Node* getHead();
     Movie searchMovie(int rating);
+    int getSize();
 private:
     Node *head;
 };

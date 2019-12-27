@@ -79,3 +79,14 @@ Node* LinkedList::getHead()
     return head;
 }
 
+int LinkedList::getSize()
+{
+    Node *temp = head;
+    int size = 0;
+    while (temp!=NULL)
+    {
+        size++;
+        temp = temp->getNext();
+    }
+    return size;
+}
